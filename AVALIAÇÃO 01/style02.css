@@ -1,0 +1,332 @@
+/* Titulo (H2) Universal estilizado*/
+h2{
+    border-left: 5px dashed black;
+    border-top: 5px solid red;
+    border-right: 5px solid blue;
+    border-radius: 60px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Titulo (H2) estilizado em preto*/
+#h21{
+    color: red;
+}
+
+/* Titulo (H2) estilizado em preto*/
+#p2{
+    color: red;
+}
+
+/* Titulo (H3) alinhado ao centro*/
+#h31{
+    text-align: center;
+}
+
+/* Titulo (H3) estilizado em preto e alinhado a esquerda*/
+#h32{
+    text-align: left;
+    color: black;
+}
+
+/* Titulo (H3) estilizado em brando e centralizado*/
+#h33{
+    text-align: center;
+    color: white;
+}
+
+/* Titulo (H4) alinhado a esquerdo*/
+#h41{
+    text-align: left;
+}
+
+/* Tabela com borda centralizada*/
+#table3{
+    border-width: center;
+}
+/* Linha da tabela alinhada a esquerda*/
+#th1{
+    text-align: left;
+}
+/* Linha da tabela alinhada ao centro*/
+#th2{
+    text-align: center;
+}
+
+/* Formulario de Cadastro e login*/
+form {
+    border: 2px solid rgb(86, 86, 255); /* Apenas a borda azul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.form-header {
+    background-color: #d3d3d3; /* Cor cinza */
+    height: 30px; /* Altura do topo */
+}
+
+#Dados1 {
+    color: red;
+    font-size: 20px;
+    background-color: rgb(211, 209, 209);
+    overflow: hidden;
+    width: 100%; 
+    padding: 15px;
+    height: auto; 
+    box-sizing: border-box; 
+    border-radius: 5px; 
+}
+
+#Dados2{
+    color: red;
+    font-size: 17px;
+    text-align: left;
+}
+
+#Dados3{
+    font-size: 13px;
+    text-align: right;
+    margin-left: 260px;
+}
+
+#Dados4{
+    color: red;
+    font-size: 15px;
+    text-align: left;
+    margin-right: 120px;
+}
+
+/*Botão de cadastro e login*/
+#cadastro2{
+    margin: auto;
+    background: green;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+} 
+/* Botão muda para azul quando passa o mouse em cima*/
+#cadastro2:hover{
+    background: blue;
+}
+
+/*Video de fabrica de Suplementos*/
+frame{
+    text-align: center;
+}
+
+/* Titulo (H3) de cor verde*/
+h3{
+    color: green;
+}
+
+/* Titulo (H2) alinhado ao centro e cor azul*/
+#h2azul{
+    color: blue;
+    text-align: center;
+    width: 80%;
+    margin:auto;
+}
+/* Titulo (H2) alinhado ao centro e cor verde*/
+#h2verde{
+    color: green;
+    width: 80%;
+    margin:auto;
+}
+/* Titulo (H3) alinhado ao centro e cor verde*/
+#h3verde{
+    color: green;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+/* Titulo (H3) alinhado ao centro e cor azul RGB*/
+#h3azul{
+    color: rgb(3, 3, 112);
+    width: 80%;
+    margin:auto;
+}
+
+/* Coluna (DIV) estilizada de cor verde RGB e com letra branco*/
+#colunaverde{
+    color: white;
+    background-color: rgb(32, 235, 32);
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+
+/* Coluna (DIV) estilizada de cor roxa e letra em verde*/
+#colunaroxa1{
+    color: green;
+    background-color: blueviolet;
+    overflow: hidden;
+    width: 90%;
+    margin:auto;
+}
+
+/* Coluna (DIV) estilizada de cor roxa violeta e com letra branco*/
+#colunaroxa2{
+    color: white;
+    background-color: blueviolet;
+    overflow: hidden;
+    width: 90%;
+    margin:auto;
+}
+
+/* Coluna (DIV) estilizada de cor azul e com letra branco*/
+#colunaazul1{
+    color: white;
+    background-color: blue;
+    overflow: hidden;
+    width: 90%;
+    margin:auto;
+}
+
+/* Coluna (DIV) estilizada de cor roxa violeta e com letra branco*/
+#colunaroxa3{
+    color: white;
+    background-color: blueviolet;
+    overflow: hidden;
+    border-radius: 30px;
+    width: 90%;
+    margin:auto;
+}
+
+/* Coluna (DIV) estilizada de cor preta e com letra branco*/
+#colunapreta{
+    color: white;
+    background-color: black;
+    overflow: hidden;
+    width: 90%;
+    margin:auto;
+}
+
+/* Coluna (DIV) estilizada de cor cinza e com letra branco*/
+#colunacinza{
+    color: white;
+    background-color: gray;
+    width: 90%;
+    margin:auto;
+}
+
+/* Coluna (DIV) estilizada de cor vermelha e com letra branco*/
+#colunavermelha{
+    color: white;
+    background: red;
+    text-align: center;
+    width: 90%;
+    margin:auto;
+}
+
+/* Paragrafo (P) estilizada de cor verde e margem automatica*/
+#paragrafoverde{
+    color: rgb(1, 66, 1);
+    width: 90%;
+    margin:auto;
+}
+
+/* Botão Voltar para pagina principal (INDEX)*/
+#voltar{
+    margin: auto;
+    background: green;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 5px;
+}
+
+/* Cabeçalho (Header) do Cadastro e Login */
+.headerlogo2 {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    background: white;
+    box-shadow: 5px 5px 15px gray;
+}
+.navbarheader2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 center;
+}
+
+/* Paragrafo alinhado a esquerda*/
+#p4{
+    text-align: left;
+}
+/* Paragrafo alinhado a direita*/
+#p5{
+    text-align: right;
+    font-size: 13px;
+}
+/* Paragrafo Justificado*/
+#p6{
+    text-align: justify;
+}
+
+/* Imagem do cabeçalho da tela de Login e cadastro*/
+#imgcadastro{
+    padding-left: 230px;
+}
+
+/* Cabeçalho Cinza (header) Link de Navegação entre as categorias */
+.navbarheader3 {
+    color: white;
+    background-color: rgb(192, 191, 191);
+    width: 100%;
+    width: top;
+    height: 20px;
+    text-align-last: left;
+    font-weight: center;
+    align-items: center;
+    text-orientation: initial;
+    border: 1px solid  rgb(192, 191, 191);
+}

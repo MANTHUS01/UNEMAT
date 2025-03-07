@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatina</title>
+    <link rel="stylesheet" href="style02.css">
+    <link rel="stylesheet" href="style03.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>  <!-- Titulo (Cabeçalho) Principal com: logo, busca dos Suplementos, link de cadastro e Login  -->
+    <center><header class="headerlogo">
+    <nav class="navbarheader">
+            <!-- Logo da Empresa -->
+        <div class="logoheader">
+            <a href="index.html">
+                <img src="img/logo Orion_Z - 1.JPG" alt="" ></a>
+        </div>
+            <div class="search-header-container">
+                <input type="text" placeholder="Search..." class="search-header-input" id="searchInput" onkeypress="checkEnter(event)">
+                <button onclick="ativarbusca()" class="search-header-btn">
+                🔍 <!-- Ícone de busca -->
+                </button>
+            </div>
+                <!-- Botões do link de Cadastro e Login do site -->
+        <div class="ctaheader">
+            <a href="cadastro.html" class="button">Cadastre-se</a>
+        </div>
+        <div class="ctaheader">
+            <a href="login.html" class="button">Login</a>
+            </div>
+        </div>
+</nav></header>     <!-- Cabeçalho dos links de categorias dos produtos -->
+    <nav id="nav2">
+        <ul>        <!-- Lista de Categorias dos produtos -->
+            <li class="menu" text-align="left">
+                <ul>
+                    <a href="#" id="divitens1" >☰TODAS AS CATEGORIAS</a>
+                    <div class="itens">
+                    <li>    <!-- Lista dos produtos com repectivos produtos -->
+                    <div id="divitens2">Proteina</div>
+                    <a href="Whey.html" id="divitens3">Whey</a></li>
+                    <li>
+                    <div id="divitens2">Aminoácidos</div>
+                    <a href="bcaa.html" id="divitens3">BCAA</a>
+                    <a href="creatina.html" id="divitens3">Creatina</a></li>
+                </div>
+                </ul>
+            </li>
+            <!-- Links separados dos produtos com imagem de cada produto -->
+            <li class="menu">
+                <a href="Whey.html" id="divitens4">Whey</a>
+                <div class="itens">
+                    <a href="Whey.html">
+                    <img src="img/Pote de Whey Protein - pequeno.jpeg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li class="menu">
+                <a href="creatina.html" id="divitens4">Creatina</a>
+                <div class="itens">
+                    <a href="creatina.html">
+                    <img src="img/Pote de Creatina - pequeno.jpeg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li class="menu">
+                <a href="bcaa.html" id="divitens4">BCAA</a>
+                <div class="itens">
+                    <a href="bcaa.html">
+                    <img src="img/Pote de BCAA - pequeno.jpeg" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+                <!-- Link de Navegação entre as categorias -->
+        <div class="navbarheader3">
+            <a href="index.html" id="link2">ORION&Z SUPLEMENTOS  >  </a>
+            <a href="creatina.html" id="link3">AMINOÁCIDOS -> CREATINA</a>
+        </div>
+    </nav><br>
+                <!-- Imagem do produto e descrição do preço para compra-->
+    <img src="img/Pote de Creatina.jpeg" alt="">
+    <center></center>
+        <h3><b>R$50,40 (cada)</b></h3>
+        <a id="cadastro2" href="cadastro.html" onclick="AlertaComprar()"><b>COMPRAR</b></a><br><br><br>
+                <!-- Tabela Nutricional do produto -->
+        <h2>TABELA NUTRICIONAL</h2><br>
+        </center>
+    <table width ="90%" border="3">
+        <tr>
+            <th id="th1"><b>INFORMAÇÃO NUTRICIONAL</b><br>
+                Porção: 3g (2 dosadores)
+            </th>  
+        </tr>
+        <tr>
+            <th>Quantidade por Porção</th>
+            <th></th>
+            <th>%VD*</th>    
+        </tr>
+        <tr>
+            <th>Creatina</th>
+            <th>3g</th>
+            <th>**</th>
+        </tr>
+        <tr>
+            <th>(*)Produto isento de Carboidratos, proteínas e gorduras, sem valor significativo para calorias.<br>
+                (**)Valor diário não especificado.
+            </th>
+        </tr>
+    </table>
+        <!-- Informações sobre o produto e suas composições -->
+    <p id="p6"><b>INGREDIENTES:</b> Creatina monohidratada em pó. <b>NÃO CONTÉM GLÚTEN.</b></p>
+        <p><b>RECOMENDAÇÕES DE USO: </b>Ingerir uma porção (3g) ao dia.</p>
+        <p><b>IMPORTANTE: </b>Produto indicado para o grupo populacional > 19 anos. ESTE PRODUTO NÃO É UM MEDICAMENTO. NÃO EXCEDER A RECOMENDAÇÃO DIÁRIA DE CONSUMO INDICADA NA EMBALAGEM. MANTENHA FORA DO ALCANCE DAS CRIANÇAS. Este produto não deve ser consumido por gestantes, lactantes e crianças. Este produto não substitui uma alimentação equilibrada e seu consumo deve ser orientado por um nutricionista ou médico. Produto isento da obrigatoriedade de registro, conforme Resolução RDC nº 240/2018.</p>
+        <p><b>ATENÇÃO: </b> A Creatina possuí característica higroscópica que é a capacidade de absorver água/umidade, desta forma o produto pode empedrar/empelotar, onde este fato não altera a qualidade ou resultado do produto. O consumidor poderá observar o produto empedrado ao receber ou ao longo do tempo de uso.</p>
+        <center>
+            <h3><b>R$50,40 (cada)</b></h3>
+            <a id="cadastro2" href="cadastro.html" onclick="AlertaComprar()"><b>COMPRAR</b></a><br><br><br>
+    </center>
+            <!-- Informações sobre o produto e dicas de seus uso -->
+        <h2 id="h2azul">O QUE É CREATINA?</h2><br>
+        <div id="colunaverde">
+        <p>A creatina é um nutriente classificado como "amina", ela é fabricada por nosso organismo e também é encontrada em alguns alimentos. 95% da creatina presente em nosso organismo encontra-se nos músculos, isto porque creatina é usada pela célula muscular na formação de energia, responsável pelas contrações. Ou seja, sem creatina não há contração e a suplementação de creatina pode aumentar a força muscular.</p>
+        </div><br>
+            <h2 id="h2azul">COMO CONSUMIR CREATINA MONIHIDRATADA CREAPURE®?</h2><br>
+        <div id="colunaverde">
+            <h3 id="h3azul">Melhor horário para tomar Creatina?</h3>
+                <p>O suplemento de creatina apresenta seus benefícios através do uso crônico. Por isso, após iniciado seu consumo, deve ser ingerida todos os dias.</p>
+                <p>Levarão alguns dias até que os benefícios possam ser observados em sua totalidade.</p>
+                <p>A creatina é insulinodependente, ou seja, é preciso consumi-la junto com alimentos ou suplementos que influenciam a produção de insulina (que possuem alto índice glicêmico), como por exemplo, dextrose, maltodextrina, arroz, pão, macarrão ou proteínas de alto índice insulinêmico como leite ou whey protein.</p>
+                <p>A sugestão de consumo determinada pela ANVISA é de 3g ao dia.</p>
+                <p>Quanto ao horário, não há um consenso entre os pesquisadores. Porém, existem evidências que apontam para maiores benefícios quando o produto é consumido ao final do treino.</p>
+            <h3 id="h3azul">Como inserir a Creatina Creapure® na sua dieta?</h3>
+                <p>Há uma sugestão de quantidade referente ao peso em massa muscular.</p>
+                <p>É indicado em média, 0,07g de creatina para cada kg de massa livre de gordura. Mas atenção, ao fazer o cálculo, deve-se levar em consideração o peso total menos a quantidade de gordura presente no seu corpo.</p>
+                <p>Essa avaliação pode ser feita com a ajuda de um nutricionista.</p>
+                <p>Para a preparação, você pode combiná-la com o shake pré ou pós-treino. Apenas garanta sua absorção associando-a com outros alimentos que gerem a produção de insulina.</p>
+        </div><br>
+        <h2 id="h2verde">BENEFICIOS DA CREATINA</h2><br>
+        <div id="colunaroxa2">
+            <p id="paragrafoverde">A Creatina é um dos únicos suplementos capazes de aumentar significativamente o desempenho atlético, por isso chamada de recurso ergogênico nutricional. O preço da creatina é baixo se pensarmos em todos os seus benefícios. Em pessoas com aporte reduzido de creatina exógena alimentar, como idosos, veganos e vegetarianos, o suplemento traz ótimos efeitos ergogênicos. A suplementação é indicada para diferentes perfis de indivíduos. Entre eles destacam-se:</p>
+        <ul>
+            <li>Praticantes de musculação;</li>
+            <li>Praticantes de CrossFit;</li>
+            <li>Corredores;</li>
+            <li>Nadadores;</li>
+            <li>Ciclistas;</li>
+            <li>Levantadores de peso (Halterofilistas);</li>
+            <li>Idosos.</li>
+            <li>Portadores de patologias (mediante recomendação profissional);</li>
+        </div><br>
+        </ul>
+        <h2 id="h2azul">Creatina antes ou depois do treino?</h2><br>
+        <div id="colunapreta">
+            <p>Os pesquisadores não chegaram a um consenso com relação a esse assunto. Enquanto alguns especialistas defendem a ideia de que o seu consumo antes ou depois não influencia no resultado, outros acreditam que o consumo pós-treino é o mais indicado.</p>
+            <p>Estudos realizados com fisiculturistas indicam que a administração da creatina após a prática de atividades físicas pode proporcionar mudanças positivas se comparada com a ingestão pré-exercício.</p>
+            <p>Desta forma, a orientação é que você busque o suporte do seu nutricionista. Ele poderá avaliar a sua dieta, estratégia, eventual necessidade de suplementação com creatina e os melhores horários para administração do suplemento com base nos seus objetivos.</p>
+        </div><br>
+            <h2 id="h2azul">Creatina Creapure® combinada a outros suplementos</h2><br>
+        <center>
+        <div id="colunaroxa2">
+          <h4 id="h41">Em algumas situações, é indicado pelo nutricionista realizar a combinação da creatina com outros suplementos, o que pode ajudar a atingir resultados específicos em uma estratégia de treino e alimentação. Confira a seguir como melhorar o seu desempenho com esse tipo de combinação de suplementos.</h4>
+            <a href="Whey.html">
+            <img src="img/Pote de Whey Protein - pequeno.jpeg" alt="" ></a>
+        </div>
+        <div id="colunaroxa2">
+            <h3 id="h3verde">Creatina e Whey Protein</h3></center>
+        <div id="colunaroxa3">
+            <p>Amplamente consumido por praticantes de atividade física, este produto também pode ser usado por sedentários. <a href="Whey.html">Whey</a> e creatina complementam-se, pois o uso da creatina pode gerar aumento de força e resistência nas atividades físicas, isto reflete em aumento nas demandas proteicas.</p>
+        </div>
+        <div id="colunaroxa3" >
+            <center><a href="bcaa.html">
+            <img src="img/Pote de BCAA - pequeno.jpeg" alt=""></a></center>
+            <h3 id="h31">Creatina e BCAA</h3>
+            <p>Sabemos que a creatina é um dos poucos suplementos com eficácia comprovada no que diz respeito ao efeito ergogênico. Por meio da suplementação e combinação com <a href="bcaa.html">BCAA</a>, além de melhorar o desempenho nos exercícios de alta intensidade, é possível observar o aumento nas adaptações dos treinos e no desenvolvimento dos músculos.</p>    
+        </div><br><br>
+        <div id="colunacinza">
+            <h2 id="h2verde">MITO OU VERDADE</h2>
+            <h3>"A Creatina deixa o atleta inchado e com retenção de líquido."</h3>
+                <p>Isso não é possível de acontecer, pois a creatina realiza uma hidratação intramuscular. Ou seja, apenas os músculos retêm o líquido e incham. É nesse processo que acontece a hipertrofia.</p>
+            <h3>"Creatina engorda."</h3>
+                <p>Pelo contrário. A creatina auxilia no ganho de massa magra e muscular. Gradativamente, tal ganho acelera o metabolismo e a perda de peso e gordura.</p>
+            <h3>"Creatina faz mal aos rins e fígado."</h3>
+                <p>O uso de creatina é 100% seguro para pessoas saudáveis, não há risco de desenvolvimento de patologias renais ou hepáticas.</p>
+                <p>Existe uma confusão / mal entendido muito grande entre creatina e creatinina, que se trata de um exame laboratorial feito a partir do sangue. Mas não há nenhuma relação entre a suplementação de creatina e creatinina.</p>
+            </div><br>
+            <h3 id="h31">REFERENCIAS</h3>
+                <p>STECKER, Richard A.; HARTY, Patrick S.; JAGIM, Andrew;</p>
+                <p>CANDOW, Darren; KERKSICK, Chad M - Timing of ergogenic aids and micronutrients on muscle and exercise performance, 2019.</p>
+                <p>KREIDER, Richard B; KALMAN, Douglas S.; ANTONIO, José; ZIGENFUSS, Tim N.; WILDMAN, Robert; COLLINS, Rick; CANDOW, Darren G.; KLEINER, Susan M;, ALMADA, Anthony L; LOPEZ, Hector L. - International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine, 2017.</p>
+
+                <!-- Video de Fabrica de Suplementos -->
+            <center>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/C5HXfmxAjXY?si=tS9YHd5R0jJzcNHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </center>
+
+            <!-- Contatos da Empresa -->
+        <h4>📧 E-mail: sac@orionzsupplements.com.br</h4>
+    <h4>📞 Telefone: (66) 3003-8765 <br>
+        Seg a Sex das 8h às 12h | das 13h30 às 18h
+    </h4><br>
+        <center>
+        <a id="voltar" href="index.html">Voltar</a>
+    </center>
+        <script src="script.js"></script>
+    </body>
+</html>

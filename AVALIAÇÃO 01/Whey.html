@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whey Protein</title>
+    <link rel="stylesheet" href="style02.css">
+    <link rel="stylesheet" href="style03.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>  <!-- Titulo (Cabeçalho) Principal com: logo, busca dos Suplementos, link de cadastro e Login  -->
+    <center><header class="headerlogo">
+    <nav class="navbarheader">
+            <!-- Logo da Empresa -->
+        <div class="logoheader">
+            <a href="index.html">
+                <img src="img/logo Orion_Z - 1.JPG" alt="" ></a>
+        </div>
+            <div class="search-header-container">
+                <input type="text" placeholder="Search..." class="search-header-input" id="searchInput" onkeypress="checkEnter(event)">
+                <button onclick="ativarbusca()" class="search-header-btn">
+                🔍 <!-- Ícone de busca -->
+                </button>
+            </div>
+                <!-- Botões do link de Cadastro e Login do site -->
+        <div class="ctaheader">
+            <a href="cadastro.html" class="button">Cadastre-se</a>
+        </div>
+        <div class="ctaheader">
+            <a href="login.html" class="button">Login</a>
+            </div>
+        </div>
+</nav></header>     <!-- Cabeçalho dos links de categorias dos produtos -->
+    <nav id="nav2">
+        <ul>        <!-- Lista de Categorias dos produtos -->
+            <li class="menu" text-align="left">
+                <ul>
+                    <a href="#" id="divitens1" >☰TODAS AS CATEGORIAS</a>
+                    <div class="itens">
+                    <li>    <!-- Lista dos produtos com repectivos produtos -->
+                    <div id="divitens2">Proteina</div>
+                    <a href="Whey.html" id="divitens3">Whey</a></li>
+                    <li>
+                    <div id="divitens2">Aminoácidos</div>
+                    <a href="bcaa.html" id="divitens3">BCAA</a>
+                    <a href="creatina.html" id="divitens3">Creatina</a></li>
+                </div>
+                </ul>
+            </li>   
+            <!-- Links separados dos produtos com imagem de cada produto -->
+            <li class="menu">
+                <a href="Whey.html" id="divitens4">Whey</a>
+                <div class="itens">
+                    <a href="Whey.html">
+                    <img src="img/Pote de Whey Protein - pequeno.jpeg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li class="menu">
+                <a href="creatina.html" id="divitens4">Creatina</a>
+                <div class="itens">
+                    <a href="creatina.html">
+                    <img src="img/Pote de Creatina - pequeno.jpeg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li class="menu">
+                <a href="bcaa.html" id="divitens4">BCAA</a>
+                <div class="itens">
+                    <a href="bcaa.html">
+                    <img src="img/Pote de BCAA - pequeno.jpeg" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+            <!-- Link de Navegação entre as categorias -->
+        <div class="navbarheader3">
+            <a href="index.html" id="link2">ORION&Z SUPLEMENTOS  >  </a>
+            <a href="Whey.html" id="link3">PROTEÍNA -> WHEY PROTEIN</a>
+        </div>
+    </nav><br>
+            <!-- Imagem do produto e descrição do preço para compra-->
+    <img src="img/Pote de Whey Protein.jpeg" alt="">
+    <center></center>
+        <h3><b>R$119,70 (cada)</b></h3>
+    <a id="cadastro2" href="cadastro.html" onclick="AlertaComprar()"><b>COMPRAR</b></a><br><br><br>
+                <!-- Tabela Nutricional do produto -->
+    <h2 id="h2">TABELA NUTRICIONAL DE DIFERENTES WHEY PROTEIN
+        SABOR: NATURAL</h2><br>
+</center>
+    <table width ="90%" border="3">
+    
+    <tr>
+        <th>INFORMAÇÃO NUTRICIONAL</th>  
+        <th></th>
+        <th></th>
+    </tr>
+    <tr align="left">
+        <th>Porções por embalagem: Cerca de 33 <br>
+        Porção: 30 g (2+1/2 dosadores)
+        </th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th>30 g</th>
+        <th>%VD*</th>
+    </tr>
+    <tr>
+        <th align="left">Valor energético</th>
+        <th>126</th>
+        <th>6</th>
+    </tr>
+    <tr>
+        <th align="left">Carboidratos (g)</th>
+        <th>3,1</th>
+        <th>1</th>
+    </tr>
+    <tr>
+        <th align="left"> Açucares totais (g)</th>
+        <th>3,1</th>
+        <th></th>
+    </tr>
+    <tr>
+        <th align="left">Açucares adicionais (g)</th>
+        <th>0</th>
+        <th>0</th>
+    </tr>
+    <tr>
+        <th align="left"> Proteinas (g)</th>
+        <th>24</th>
+        <th>48</th>
+    </tr>
+    <tr>
+        <th align="left">Alanina</th>
+        <th>1220</th>
+    </tr>
+    <tr>
+        <th align="left">Arginina</th>
+        <th>610</th>
+    </tr>
+    <tr>
+        <th align="left">Ácido aspértico</th>
+        <th>2740</th>
+    </tr>
+    <tr>
+        <th align="left">Cisteína</th>
+        <th>560</th>
+    </tr>
+    <tr>
+        <th align="left">Ácido glutâmico</th>
+        <th>4460</th>
+    </tr>
+    <tr>
+        <th align="left">Glicina</th>
+        <th>450</th>
+    </tr>
+    <tr>
+        <th align="left">Histidina</th>
+        <th>450</th>
+    </tr>
+    <tr>
+        <th align="left">Isoleucina</th>
+        <th>1510</th>
+    </tr>
+    <tr>
+        <th align="left">Leucina</th>
+        <th>2520</th>
+    </tr>
+    <tr>
+        <th align="left">Lisina</th>
+        <th>2200</th>
+    </tr>
+    <tr>
+        <th align="left">Metionina</th>
+        <th>620</th>
+    </tr>
+    <tr>
+        <th align="left">Fenilalanina</th>
+        <th>810</th>
+    </tr>
+    <tr>
+        <th align="left">Prolina</th>
+        <th>1460</th>
+    </tr>
+    <tr>
+        <th align="left">Serina</th>
+        <th>1300</th>
+    </tr>
+    <tr>
+        <th align="left">Treonina</th>
+        <th>1790</th>
+    </tr>
+    <tr>
+        <th align="left">Triptofano</th>
+        <th>450</th>
+    </tr>
+    <tr>
+        <th align="left"> Tirosina</th>
+        <th>740</th>
+    </tr>
+    <tr>
+        <th align="left"> Valina</th>
+        <th>1410</th>
+    </tr>
+    <tr>
+        <th align="left">Gorduras totais (g)</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <th align="left">Gorduras saturadas (g)</th>
+        <th>1</th>
+        <th>5</th>
+    </tr>
+    <tr>
+        <th align="left">Gorduras trans (g)</th>
+        <th>0</th>
+        <th>0</th>
+    </tr>
+    <tr>
+        <th align="left">Fibras alimentares (g)</th>
+        <th>0</th>
+        <th>0</th>
+    </tr>
+    <tr>
+        <th align="left">Sódio</th>
+        <th>53</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <th align="left">*Percentual de valores diários fornecidos pela porção.</th>
+    </tr>
+</table>
+        <!-- Informações sobre o produto e suas composições -->
+    <p><b>Ingredientes: </b>proteína de soro do leite concentrada e emulsificante lecitina. <b>ALÉRGICOS: CONTÉM DERIVADOS DE SOJA E LEITE. CONTÉM LACTOSE. NÃO CONTÉM GLÚTEN.</b></p>
+    <p><b>Recomendação de consumo: </b>consumir 1 porção ao dia.</p>
+    <p><b>Sugestão de preparo: </b>dissolver 30 g (2+½ dosadores) do pó em 200 mL de água, preferencialmente gelada. O tipo e quantidade de líquido são sugestões e ficam a critério do consumidor.</p>
+    <p>Produto indicado para o grupo populacional ≥ 19 anos. Este produto não é um medicamento. Não exceder a recomendação diária de consumo indicada na embalagem. Mantenha fora do alcance de crianças.</p>
+    <p><b>Instruções de conservação: </b>conservar ao abrigo da luz, do calor e da umidade. Após aberto, manter em local seco e arejado e consumir em até 60 dias. Após o consumo, manter a embalagem bem fechada.</p>
+    <center>
+        <h3><b>R$119,70 (cada)</b></h3>
+        <a id="cadastro2" href="cadastro.html" onclick="AlertaComprar()"><b>COMPRAR</b></a><br><br><br>
+</center>
+        <!-- Informações sobre o produto e dicas de seus uso -->
+    <h2><b>O QUE É WHEY PROTEIN?</b></h2><br>
+    <p>O <b>Whey Protein,</b> que vem sendo consumido em maior quantidade e frequência a cada dia, é o resultado de uma série de processos industriais que são aplicados ao leite.</p>
+    <p>O Whey Protein <b>possui um alto valor nutricional e de aminoácidos essenciais, </b>principalmente os de cadeia ramificada. Além disso, sendo extraído do leite, o suplemento também apresenta cálcio naturalmente.</p>
+    <p>O suplemento, composto por proteínas obtidas a partir do soro do leite, é comercializado em pó e pode ser tomado com água, leite ou ser incluído em diversas receitas.</p>
+    <p>Por definição, apenas as proteínas do soro do leite podem ser chamadas de Whey Protein.</p>
+    <p>Este produto tem como principal objetivo fornecer proteínas de alto valor biológico, que poderão ser usadas no trabalho de anabolismo muscular, <b>manutenção do tecido muscular ou recuperação das fibras </b>de praticantes de atividades físicas em geral.</p><br>
+    <h2 id="h2azul"><b>WHEY PROTEIN E O AUMENTO DO VOLUME MUSCULAR</b></h2><br>
+    <p>O consumo de Whey Protein 80% pode ser feito após o treino, por quem busca aumento da massa magra e precisa de auxílio para seus músculos crescerem.</p>
+    <p>Para alcançar a hipertrofia precisamos fornecer proteínas quantidade e com qualidade adequada, as proteínas são transformadas em aminoácidos, estes nutrientes essenciais são usados no processo de construção muscular.</p>
+    <p>Por essa razão, o whey protein é utilizado, principalmente, por praticantes de atividade física e atletas de alto desempenho.</p>
+    <p>Praticantes de exercício de força como musculação podem ter aumento nas necessidades de nutrientes inclusive proteínas, quando comparados com indivíduos sedentários.</p>
+    <p>A proteína presente no soro do leite é uma excelente fonte de aminoácidos essenciais, como os BCAA's.</p>
+    <p>A proteína concentrada é uma das mais indicadas para quem está focado na hipertrofia e precisa de uma boa quantidade de proteínas na dieta para suprir as necessidades do treino.</p><br>
+    <h2 id="h2azul"><b>WHEY PROTEIN E A SUA RELAÇÃO COM RECUPERAÇÃO MUSCULAR</b></h2><br>
+    <p>As fibras musculares danificadas durante o exercício físico de alta intensidade utilizam aminoácidos proveniente das proteínas durante a recuperação muscular, a ingestão de whey protein favorece o consumo de proteínas e aminoácidos essenciais de forma adequada, auxiliando a recuperação do tecido muscular e a recuperação das fibras.</p>
+    <p>O Whey Protein Growth ajuda na recuperação da fibra muscular depois de um treino de hipertrofia por ser um suplemento rico em aminoácidos essenciais e proteínas de alto valor biológico, que são facilmente absorvidos pelo organismo.</p>
+        <!-- Alerta sobre a contra indicação do produto-->
+    <div id="colunavermelha">
+        ⚠️
+        <h3 id="h33">WHEY PROTEIN: CONTRA INDICAÇÕES</h3>
+        <p>Este produto é derivado de leite, pessoas com intolerância a lactose, alergia as proteínas do leite não devem consumi-lo.</p>
+    </div>
+        <!-- Video de Fabrica de Suplementos -->
+    <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/C5HXfmxAjXY?si=tS9YHd5R0jJzcNHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </center>
+            <!-- Contatos da Empresa -->
+    <h4>📧 E-mail: sac@orionzsupplements.com.br</h4>
+    <h4>📞 Telefone: (66) 3003-8765 <br>
+        Seg a Sex das 8h às 12h | das 13h30 às 18h
+    </h4>
+    <center>
+        <a id="voltar" href="index.html">Voltar</a>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>

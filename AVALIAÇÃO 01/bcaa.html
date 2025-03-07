@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCAA</title>
+    <link rel="stylesheet" href="style02.css">
+    <link rel="stylesheet" href="style03.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>  <!-- Titulo (Cabeçalho) Principal com: logo, busca dos Suplementos, link de cadastro e Login  -->
+    <center><header class="headerlogo">
+    <nav class="navbarheader">
+            <!-- Logo da Empresa -->
+        <div class="logoheader">
+            <a href="index.html">
+                <img src="img/logo Orion_Z - 1.JPG" alt="" ></a>
+        </div>
+            <div class="search-header-container">
+                <input type="text" placeholder="Search..." class="search-header-input" id="searchInput" onkeypress="checkEnter(event)">
+                <button onclick="ativarbusca()" class="search-header-btn">
+                🔍 <!-- Ícone de busca -->
+                </button>
+            </div>
+                <!-- Botões do link de Cadastro e Login do site -->
+        <div class="ctaheader">
+            <a href="cadastro.html" class="button">Cadastre-se</a>
+        </div>
+        <div class="ctaheader">
+            <a href="login.html" class="button">Login</a>
+            </div>
+        </div>
+</nav></header>     <!-- Cabeçalho dos links de categorias dos produtos -->
+    <nav id="nav2">
+        <ul>        <!-- Lista de Categorias dos produtos -->
+            <li class="menu" text-align="left">
+                <ul>
+                    <a href="#" id="divitens1" >☰TODAS AS CATEGORIAS</a>
+                    <div class="itens">
+                    <li>    <!-- Lista dos produtos com repectivos produtos -->
+                    <div id="divitens2">Proteina</div>
+                    <a href="Whey.html" id="divitens3">Whey</a></li>
+                    <li>
+                    <div id="divitens2">Aminoácidos</div>
+                    <a href="bcaa.html" id="divitens3">BCAA</a>
+                    <a href="creatina.html" id="divitens3">Creatina</a></li>
+                </div>
+                </ul>
+            </li>       
+            <!-- Links separados dos produtos com imagem de cada produto -->
+            <li class="menu">
+                <a href="Whey.html" id="divitens4">Whey</a>
+                <div class="itens">
+                    <a href="Whey.html">
+                    <img src="img/Pote de Whey Protein - pequeno.jpeg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li class="menu">
+                <a href="creatina.html" id="divitens4">Creatina</a>
+                <div class="itens">
+                    <a href="creatina.html">
+                    <img src="img/Pote de Creatina - pequeno.jpeg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li class="menu">
+                <a href="bcaa.html" id="divitens4">BCAA</a>
+                <div class="itens">
+                    <a href="bcaa.html">
+                    <img src="img/Pote de BCAA - pequeno.jpeg" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>   
+                <!-- Link de Navegação entre as categorias -->
+        <div class="navbarheader3">
+            <a href="index.html" id="link2">ORION&Z SUPLEMENTOS  >  </a>
+            <a href="bcaa.html" id="link3">AMINOÁCIDOS -> BCAA</a>
+        </div>
+    </nav><br>
+                <!-- Imagem do produto e descrição do preço para compra-->
+    <img src="img/Pote de BCAA.jpeg" alt="">
+</center><center>
+    <h3><b>R$50,40 (cada)</b></h3>
+    <a id="cadastro2" href="cadastro.html" onclick="AlertaComprar()"><b>COMPRAR</b></a><br><br><br>
+            <!-- Tabela Nutricional do produto -->
+    <h2>TABELA NUTRICIONAL</h2><br>
+    <h2>SABOR NATURAL</h2><br>
+        <table width ="45%" border="3">
+               <th id="th2"><b>INFORMAÇÃO NUTRICIONAL</b><br><hr>  
+                   <p id="th1">Porções por embalagem: 40 <br>
+                    Porção: 5g (1+1/2 dosadores)</p> 
+            <tr>
+                <th></th>
+                <th>5g</th>
+                <th>%VD*</th>
+            </tr>
+            <tr>
+                <th id="th1">Valor energético</th>
+                <th>20</th>
+                <th>1</th>
+            </tr>
+            <tr>
+                <th id="th1">Proteinas (g)</th>
+                <th>0</th>
+                <th>0</th>
+            </tr>
+            <tr>
+                <th id="th1"> L-Leucina (mg)</th>
+                <th>4150</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th id="th1"> L-Isoleucina (mg)</th>
+                <th>425</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th id="th1"> L-Valina</th>
+                <th>425</th>
+                <th></th>
+            </tr><hr>
+            <th id="th1">Não contém quantidade significativas de carboidratos, açucares totais, açucares adicionais, gorduras totais, gorduras saturadas, gorduras trans, fibras alimentares e sódio. <hr>
+            *Percentual de valores diários fornecidos pela porção.
+        </center>    
+        </table>
+            <!-- Informações sobre o produto e suas composições -->
+        <p><b>Ingredientes:</b>L- leucina, L-isoleucina e L-valina. <b>NÃO CONTÉM GLÚTEN.</b></p>
+        <p><b>Recomendação de consumo: </b>consumir 1 porção ao dia.</p>
+        <p><b>Sugestão de preparo: </b>dissolver 5 g (1+½ dosadores) em 200 mL de água. O tipo e a quantidade de líquido são sugestões e ficam a critério do consumidor.</p>
+        <p>Este produto não deve ser consumido por gestantes, lactantes e crianças.</p>
+        <p>Produto indicado para o grupo populacional ≥ 19 anos. Este produto não é um medicamento. Não exceder a recomendação diária de consumo indicada na embalagem. Mantenha fora do alcance de crianças.</p>
+        <p><b>Instruções de conservação: </b>conservar ao abrigo da luz, do calor e da umidade. Após aberto, manter em local seco e arejado e consumir em até 60 dias. Após o consumo, manter a embalagem bem fechada.</p>
+        <center>
+            <h3><b>R$50,40 (cada)</b></h3>
+            <a id="cadastro2" href="cadastro.html" onclick="AlertaComprar()"><b>COMPRAR</b></a><br><br><br>
+    </center>
+            <!-- Informações sobre o produto e dicas de seus uso -->
+        <h2>O QUE É BCAA (10:1:1)?</h2>
+            <p>O <b>BCAA</b> é a sigla para Branched Chain Amino Acids, isto é,  de cadeia ramificada. Esse suplemento é composto pelos chamados <b>aminoácidos</b> essenciais - nutrientes que o nosso corpo não consegue produzir. Por isso, é necessário que eles estejam presentes na dieta para serem utilizados pelo organismo.</p>
+            <p>O grande diferencial é que o BCAA garante uma combinação perfeita para quem necessita de praticidade no dia a dia. É o mesmo caso de <b>suplementos</b> famosos, como o <b>Whey Protein</b></p><br>
+        <h2>BCAA: PARA QUE SERVE</h2>
+            <p>O BCAA é composto pela Leucina, Valina e Isoleucina. Esse tipo de aminoácido compreende um terço das proteínas presentes no tecido muscular. Ou seja, sua presença implica em uma melhora importante no metabolismo de quem está buscando a hipertrofia.</p>
+            <p>O BCAA serve tanto para fornecer a energia durante a execução das séries quanto para ajudar na recuperação muscular e evitar o catabolismo.</p><br>
+        <div id="colunaazul1">
+        <h2>COMO TOMAR BCAA E EVITAR A FADIGA NO TREINO</h2>
+            <p>O BCAA pode - e deve! - ser ingerido tanto no pré quanto no pós-treino. Ao consumir antes de ir para a academia, esse suplemento ajuda no fornecimento de energia para os músculos.</p>
+            <p>Dessa forma, você tem mais combustível para evitar a fadiga e expandir sua capacidade de treino.</p>
+            <p>Ao consumi-lo no final do treino o BCAA ajudará na síntese de proteínas, este efeito poderá ser aproveitado tanto por quem deseja hipertrofia quanto por quem deseja redução de gorduras.</p>
+        </div><br>
+        <h2>SUPLEMENTO BCAA NO PÓS-TREINO</h2><br>
+            <p>Há muitas dúvidas sobre como tomar BCAA e para que serve BCAA. Ao consumir o BCAA no pós-treino, você impacta o processo de recuperação muscular.</p>
+            <p>Os aminoácidos presentes nesse suplemento ajudam a garantir a energia que seu músculo precisa para se recuperar depois de uma série intensa de exercícios. Eles também evitam que seu corpo use a proteína como fonte de energia e perca massa muscular.</p>
+
+            <!-- Video de Fabrica de Suplementos -->
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C5HXfmxAjXY?si=tS9YHd5R0jJzcNHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           </center>
+
+            <!-- Contatos da Empresa -->
+    <h4 id="h41">📧 E-mail: sac@orionzsupplements.com.br</h4>
+    <h4 id="h41">📞 Telefone: (66) 3003-8765 <br>
+    Seg a Sex das 8h às 12h | das 13h30 às 18h
+    </h4><br>
+    <center>
+    <a id="voltar" href="index.html">Voltar</a>
+</center>
+    <script src="script.js"></script>
+</body>
+</html>

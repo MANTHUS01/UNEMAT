@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style02.css">
+    <link rel="stylesheet" href="style03.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>      <!-- Cabeçalho com logo da marca e informações -->
+    <center><header class="headerlogo2">
+        <nav class="navbarheader2">
+            <div>
+                <p id="p4">Garantimos que você <br>
+                    fez <b>a melhor escolha</b></p>
+            </div>
+            <div class="logoheader2">
+                <a href="index.html">
+                    <img id="imgcadastro" src="img/logo Orion_Z - 1.JPG" alt="" ></a>
+            </div>
+            <div>
+                <p id="p5">1° LUGAR EBIT DIAMANTE AZUL 2024 <br>
+                Prêmio de melhor e-commerce do Brasil pelo terceiro ano consecutivo!</p>
+            </div>
+        </nav></header><br><br><br>
+    
+        <!-- Formulario de Cadastro -->
+    <form id="formcadastro">
+        <div >
+            <label class="form-header" for="Identificação" id="Dados1">Identificação</label>
+            
+        </div><br>
+        <label for="Dados">
+            <span id="Dados2">Dados pessoais</span>
+            <span id="Dados3">* Campos obrigatórios</span>
+        </label><br>
+        
+        <label for="Email">E-mail</label>
+        <input id="Email" type="email" placeholder="E-mail *"><br>
+        <input id="promocões" type="checkbox" name="promocões" placeholder="promocões">
+        <label for="promocões">Quero receber promoções e ofertas da Orion_z Suplementos</label><br><br>
+        <label for="CPF">CPF</label>
+        <input id="CPF" title="CPF" type="tel" name="CPF" placeholder="CPF *"><br>
+        <label for="Nome">Nome</label>
+        <input id="Nome" type="text" placeholder="Nome Completo *" ><br>
+        <label for="Nascimento">Data de Nascimento</label>
+        <input id="Nascimento" type="date" name="Nascimento" placeholder="Data de Nascimento *"><br>
+        <label for="Celular">Celular</label>
+        <input id="celular" type="tel" name="Celular" placeholder="Celular *" >
+        <label for="Fixo">Telefone Fixo</label>
+        <input id="Fixo" type="tel" name="Fixo" placeholder="Telefone Fixo" ><br>
+        <input id="mensagens" type="checkbox" name="mensagens" value="mensagens">
+        <label for="mensagens">Quero receber promoções via WhatsApp.</label><br>
+        <input id="pedidos" type="checkbox" name="pedidos" value="pedidos">
+        <label for="pedidos">Quero atualizações de pedido via WhatsApp.</label><br><br>
+        <input onclick="processarCadastro()" id="cadastro2" type="submit" value="Cadastrar">
+        
+    </form><br><br><br><br><br><br>
+            <!-- Contatos da Empresa -->
+    <h4>📧 E-mail: sac@orionzsupplements.com.br</h4>
+    <h4>📞 Telefone: (66) 3003-8765 <br>
+        Seg a Sex das 8h às 12h | das 13h30 às 18h
+    </h4><br>
+    <center>
+        <a id="voltar" href="index.html">Voltar</a>
+    </center></center><br>
+    <script src="script.js"></script>
+</body>
+</html>

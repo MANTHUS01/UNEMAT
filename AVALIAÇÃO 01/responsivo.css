@@ -1,0 +1,579 @@
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    body{
+        background: white;
+    }
+
+    h2{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .exemplo{
+        display: none;
+    }
+
+    header{
+        background: white;
+    }
+    nav{
+        flex-direction: column;
+    }
+    #nav2{
+        flex-direction: column;
+    }
+
+    .Cadastro{
+        flex-direction: column-reverse;
+    }
+
+    .navbar{
+        flex-direction:column ;
+        }
+
+    img{
+        flex-direction: column;
+    }
+
+    .button{
+        display: none;
+    }
+
+    #divitens4{
+        display: none;
+    }
+
+    .Cadastro{
+        margin-left: 25px;
+        background: green;
+        color: white;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 30px;
+        padding-right: 50px;
+        border-radius: 5px;
+    }
+    .Cadastro:hover{
+        background: blue;
+    }
+
+    .Cadastro2{
+        margin-left: 15px;
+        background: green;
+        color: white;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .Cadastro2:hover{
+        background: blue;
+    }
+
+      #colunaazul2{
+        color: black;
+        background-color: rgb(80, 80, 255);
+        width: 100%;
+        height: 550px;
+        box-shadow: 5px 5px 15px red;
+    }
+
+    #colunaverde{
+        color: white;
+        background-color: rgb(32, 235, 32);
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        width: 90%;
+        margin: auto;
+    }
+
+    #colunaroxa1{
+        color: green;
+        background-color: blueviolet;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunaroxa2{
+        color: white;
+        background-color: blueviolet;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        border-radius: 20px;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunaazul1{
+        color: white;
+        background-color: blue;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunaroxa3{
+        color: white;
+        background-color: blueviolet;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        border-radius: 20px;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunapreta{
+        color: white;
+        background-color: black;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunacinza{
+        color: white;
+        background-color: gray;
+        box-shadow: 5px 5px 15px red;
+        width: 90%;
+        border-radius: 2px;
+        margin:auto;
+    }
+    
+    #colunavermelha{
+        color: white;
+        background: red;
+        box-shadow: 5px 5px 15px blue;
+        text-align: center;
+        width: 90%;
+        margin:auto;
+    }
+    #paragrafoverde{
+        color: rgb(1, 66, 1);
+        width: 90%;
+        margin:auto;
+    }
+
+    #video{
+        width: 400px;
+        height: 200px;
+    }
+
+    table{
+        width: 400px;
+        height: 200px;
+        margin:auto;
+    }
+    
+    #p6{
+        text-align: justify;
+    }
+
+    #img2 {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+
+
+    #p4{
+        display: none;
+    }
+    #p5{
+        display: none;
+    }
+    #imgcadastro{
+        padding-right: 1000px;
+        }
+    .headerlogo2 {
+            background-color: white;
+            width: 100%;
+            height: 100px;
+            background: white;
+            box-shadow: 5px 5px 15px gray;
+        }
+        
+    .navbarheader2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 40px;
+            max-width: 1200px;
+            margin: 0 center;
+        }
+        
+        /* Formulario de login*/
+        #formlogin{
+            width: 400px;
+            height: 300px;
+            margin: auto;
+        }
+
+}
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e
+Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    body{
+        background: white;
+    }
+
+    h2{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    header{
+        background: white;
+        flex-direction: row;
+    }
+
+    table{
+        width: 400px;
+        height: 200px;
+        margin: auto;
+    }
+
+    #colunaazul2{
+        color: black;
+        background-color: rgb(80, 80, 255);
+        width: 100%;
+        height: 550px;
+        box-shadow: 5px 5px 15px red;
+    }
+
+    #colunaverde{
+        color: white;
+        background-color: rgb(32, 235, 32);
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        width: 90%;
+        margin: auto;
+    }
+
+    #colunaroxa1{
+        color: green;
+        background-color: blueviolet;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunaroxa2{
+        color: white;
+        background-color: blueviolet;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        border-radius: 20px;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunaazul1{
+        color: white;
+        background-color: blue;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunaroxa3{
+        color: white;
+        background-color: blueviolet;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        border-radius: 20px;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunapreta{
+        color: white;
+        background-color: black;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunacinza{
+        color: white;
+        background-color: gray;
+        box-shadow: 5px 5px 15px red;
+        width: 90%;
+        border-radius: 2px;
+        margin:auto;
+    }
+    
+    #colunavermelha{
+        color: white;
+        background: red;
+        box-shadow: 5px 5px 15px blue;
+        text-align: center;
+        width: 90%;
+        margin:auto;
+    }
+    #paragrafoverde{
+        color: rgb(1, 66, 1);
+        width: 90%;
+        margin:auto;
+    }
+    #p6{
+        text-align: justify;
+    }
+
+    #img2 {
+        border-radius: 50%;
+        width: 180px;
+        height: 200px;
+        display: inline-block;
+      }
+    #formlogin{
+        width: 400px;
+        height: 300px;
+        margin: auto;
+    }
+
+    #formcadastro{
+        width: 500px;
+        height: 850px;
+        margin: auto;
+    }
+
+
+    .headerlogo2 {
+        background-color: white;
+        width: 100%;
+        height: 120px;
+        background: white;
+        box-shadow: 5px 5px 15px gray;
+    }
+    
+}
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+    body{
+        background: white;
+    }
+
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+    header{
+        background: white;
+    }
+
+    table{
+        width: 400px;
+        height: 200px;
+        margin:auto;
+    }
+
+    #colunaazul2{
+        color: black;
+        background-color: rgb(80, 80, 255);
+        width: 100%;
+        height: 550px;
+        box-shadow: 5px 5px 15px red;
+    }
+
+    #colunaverde{
+        color: white;
+        background-color: rgb(32, 235, 32);
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        width: 90%;
+        margin: auto;
+    }
+
+    #colunaroxa1{
+        color: green;
+        background-color: blueviolet;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunaroxa2{
+        color: white;
+        background-color: blueviolet;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        border-radius: 20px;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunaazul1{
+        color: white;
+        background-color: blue;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunaroxa3{
+        color: white;
+        background-color: blueviolet;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        border-radius: 20px;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunapreta{
+        color: white;
+        background-color: black;
+        box-shadow: 5px 5px 15px red;
+        overflow: hidden;
+        width: 90%;
+        margin:auto;
+    }
+    
+    #colunacinza{
+        color: white;
+        background-color: gray;
+        box-shadow: 5px 5px 15px red;
+        width: 90%;
+        border-radius: 2px;
+        margin:auto;
+    }
+    
+    #colunavermelha{
+        color: white;
+        background: red;
+        box-shadow: 5px 5px 15px blue;
+        text-align: center;
+        width: 90%;
+        margin:auto;
+    }
+    #paragrafoverde{
+        color: rgb(1, 66, 1);
+        width: 90%;
+        margin:auto;
+    }
+    #p6{
+        text-align: justify;
+    }
+
+    #img2 {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        flex-direction: row;
+      }
+      #formlogin{
+        width: 400px;
+        height: 300px;
+        margin: auto;
+    }
+
+    #formcadastro{
+        width: 500px;
+        height: 870px;
+        margin: auto;
+    }
+
+
+}
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+    body{
+        background: white;
+    }
+
+    h2{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    header{
+        background: white;
+    }
+
+    table{
+        width: 400px;
+        height: 200px;
+        margin:auto;
+    }
+    #p6{
+        text-align: justify;
+    }
+
+    #img2 {
+        border-radius: 50%;
+        width: 350px;
+        height: 350px;
+        display: inline-block;
+      }
+
+      #formlogin{
+        width: 400px;
+        height: 300px;
+        margin: auto;
+    }
+
+    #formcadastro{
+        width: 500px;
+        height: 870px;
+        margin: auto;
+    }
+}
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para
+cima) */
+@media only screen and (min-width: 1200px) {
+    body{
+        background: white;
+    }
+    
+    h2{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    header{
+        background: white;
+    }
+    
+    table{
+        width: 400px;
+        height: 200px;
+        margin:auto;
+    }
+
+    #p6{
+        text-align: justify;
+    }
+
+    #img2 {
+        border-radius: 50%;
+        width: 400px;
+        height: 420px;
+        display: inline-block;
+      }
+     #formlogin{
+        width: 400px;
+        height: 300px;
+        margin: auto;
+    }
+
+    #formcadastro{
+        width: 500px;
+        height: 850px;
+        margin: auto;
+    }
+}

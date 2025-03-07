@@ -1,0 +1,146 @@
+#nav2{
+    background: green;
+    text-align: left;
+}
+
+#div2{
+    text-align: left;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav li a:hover{
+    background-color: red;
+}
+
+#divitens1{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    text-orientation: initial;
+}
+
+#divitens2{
+    color: #007bff;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px;
+}
+
+#divitens3{
+    color: black;
+    background-color: white;
+    font-weight: lighter;
+}
+
+.itens a{
+    display: block;
+    color: black;
+}
+
+.itens{
+    position: absolute;
+    border: 1px solid black;
+    display: none;
+}
+
+.menu:hover .itens{
+    display: block;
+}
+
+.headerlogo {
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+.navbarheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logoheader a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Search Bar */
+.searchheader-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-header-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    width: 150px;
+    transition: width 0.3s ease;
+}
+
+.search-header-input:focus {
+    width: 200px;
+    border-color: #007bff;
+}
+
+.search-header-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #333;
+}
+
+.ctaheader .button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.ctaheader .button:hover {
+    background-color: gray
+}
+
+#img2 {
+    height: 450px;
+    width: 420px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#link2{
+    color: rgb(116, 116, 116);
+}
+
+#link3{
+    color: black;
+}
+
