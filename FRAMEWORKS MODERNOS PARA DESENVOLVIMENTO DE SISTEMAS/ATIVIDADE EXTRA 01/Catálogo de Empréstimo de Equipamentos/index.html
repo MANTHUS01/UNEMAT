@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORION&Z Locação - Catálogo de Equipamentos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <header>
+                <div class="app-title">
+                    <span class="app-icon">🔬</span>
+                    <h1>ORION&Z Locação</h1>
+                </div>
+                <p>Catálogo de Empréstimo de Equipamentos de Laboratório</p>
+            </header>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3>Total de Equipamentos</h3>
+                    <div class="stat-value">{{ totalEquipment }}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Disponíveis</h3>
+                    <div class="stat-value">{{ availableEquipment }}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Emprestados</h3>
+                    <div class="stat-value">{{ borrowedEquipment }}</div>
+                </div>
+            </div>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="categoryFilter">Filtrar por Categoria</label>
+                    <select id="categoryFilter" v-model="filterCategory">
+                        <option value="">Todas as categorias</option>
+                        <option v-for="category in categories" :value="category">{{ category }}</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="statusFilter">Filtrar por Status</label>
+                    <select id="statusFilter" v-model="filterStatus">
+                        <option value="">Todos os status</option>
+                        <option value="disponível">Disponível</option>
+                        <option value="emprestado">Emprestado</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>{{ isEditing ? 'Editar Equipamento' : 'Cadastrar Novo Equipamento' }}</h2>
+                <form @submit.prevent="saveEquipment">
+                    <div class="form-group">
+                        <label for="name">Nome do Equipamento *</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            v-model="currentEquipment.name" 
+                            required
+                            aria-required="true"
+                            aria-label="Nome do equipamento"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Categoria *</label>
+                        <select 
+                            id="category" 
+                            v-model="currentEquipment.category" 
+                            required
+                            aria-required="true"
+                            aria-label="Categoria do equipamento"
+                        >
+                            <option value="">Selecione uma categoria</option>
+                            <option value="Informática">Informática</option>
+                            <option value="Medição">Medição</option>
+                            <option value="Áudio e Vídeo">Áudio e Vídeo</option>
+                            <option value="Elétrica">Elétrica</option>
+                            <option value="Óptica">Óptica</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="patrimonio">Número de Patrimônio *</label>
+                        <input 
+                            type="text" 
+                            id="patrimonio" 
+                            v-model="currentEquipment.patrimonio" 
+                            required
+                            aria-required="true"
+                            aria-label="Número de patrimônio"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Status *</label>
+                        <select 
+                            id="status" 
+                            v-model="currentEquipment.status" 
+                            required
+                            aria-required="true"
+                            aria-label="Status do equipamento"
+                        >
+                            <option value="disponível">Disponível</option>
+                            <option value="emprestado">Emprestado</option>
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                        <button 
+                            type="submit" 
+                            class="btn" 
+                            :class="isEditing ? 'btn-success' : 'btn-primary'"
+                            :disabled="!isFormValid"
+                            aria-label="Salvar equipamento"
+                        >
+                            {{ isEditing ? 'Salvar Alterações' : 'Adicionar Equipamento' }}
+                        </button>
+                        <button 
+                            v-if="isEditing" 
+                            type="button" 
+                            class="btn btn-secondary" 
+                            @click="cancelEdit"
+                            aria-label="Cancelar edição"
+                        >
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2>Catálogo de Equipamentos</h2>
+                <div v-if="filteredEquipment.length === 0" class="empty-state">
+                    <div class="empty-state-icon">🔍</div>
+                    <p v-if="equipmentList.length === 0">Nenhum equipamento cadastrado. Adicione seu primeiro equipamento usando o formulário acima.</p>
+                    <p v-else>Nenhum equipamento encontrado com os filtros aplicados.</p>
+                </div>
+                <table v-else class="equipment-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Categoria</th>
+                            <th>Patrimônio</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="equip in filteredEquipment" :key="equip.id">
+                            <td>{{ equip.name }}</td>
+                            <td>{{ equip.category }}</td>
+                            <td>{{ equip.patrimonio }}</td>
+                            <td>
+                                <span class="status-badge" :class="{
+                                    'status-available': equip.status === 'disponível',
+                                    'status-borrowed': equip.status === 'emprestado'
+                                }">
+                                    {{ equip.status }}
+                                </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button 
+                                        class="btn btn-primary" 
+                                        @click="editEquipment(equip)"
+                                        aria-label="Editar equipamento"
+                                    >
+                                        Editar
+                                    </button>
+                                    <button 
+                                        class="btn btn-danger" 
+                                        @click="deleteEquipment(equip)"
+                                        aria-label="Excluir equipamento"
+                                    >
+                                        Excluir
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
