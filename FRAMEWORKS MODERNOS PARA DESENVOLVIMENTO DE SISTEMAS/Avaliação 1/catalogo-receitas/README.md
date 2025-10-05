@@ -2,6 +2,14 @@
 
 Um sistema web moderno para gerenciar e compartilhar receitas saudáveis, desenvolvido com Vue 3 e Vuetify 3 como parte da disciplina de **Frameworks Modernos para Desenvolvimento de Sistemas** do curso TADS da UNEMAT.
 
+## 👨‍💻 Desenvolvido por
+
+**Aluno**: Marcos Junior da Silva
+**Matricula**: 2018165940
+**Disciplina**: Frameworks Modernos para Desenvolvimento de Sistemas
+**Curso**: SISTEMAS DE INFORMAÇÃO - UNEMAT
+**Ano**: 2025
+
 ## ✨ Funcionalidades
 
 ### 🍽️ Gestão de Receitas
@@ -215,13 +223,6 @@ Para contribuir com o projeto:
 ## 📄 Licença
 
 Este projeto foi desenvolvido para fins educacionais como parte da disciplina de Frameworks Modernos para Desenvolvimento de Sistemas do curso TADS da UNEMAT.
-
-## 👨‍💻 Desenvolvido por
-
-**Aluno**: [Seu Nome]
-**Disciplina**: Frameworks Modernos para Desenvolvimento de Sistemas
-**Curso**: TADS - UNEMAT
-**Ano**: 2024
 
 ---
 
