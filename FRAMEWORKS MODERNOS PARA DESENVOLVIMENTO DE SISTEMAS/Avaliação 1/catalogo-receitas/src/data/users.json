@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "name": "Administrador",
+      "email": "admin@receitas.com"
+    },
+    {
+      "id": 2,
+      "username": "chef",
+      "password": "chef123",
+      "name": "Chef Cozinha",
+      "email": "chef@receitas.com"
+    },
+    {
+      "id": 3, 
+      "username": "usuario",
+      "password": "user123",
+      "name": "Usuário Teste",
+      "email": "user@receitas.com"
+    }
+  ]
+}
