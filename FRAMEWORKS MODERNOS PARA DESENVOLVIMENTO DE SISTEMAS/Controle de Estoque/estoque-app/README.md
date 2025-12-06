@@ -1,15 +1,3 @@
-Perfeito!
-Aqui está o **README FINAL**, totalmente estilizado, separado por seções claras com **linhas personalizadas**, **asteriscos**, **destaques**, e pronto para **copiar e colar diretamente no arquivo `README.md`**.
-
----
-
-# 🎉 **PROMPT COMPLETO PARA O README.md — PRONTO PARA COLAR**
-
-(Copie **tudo abaixo**, incluindo separadores)
-
----
-
-````md
 # 🛰️ ORION – Sistema Inteligente de Controle de Estoque  
 ✨ _Gerencie seu estoque com precisão, eficiência e visão de futuro._
 
